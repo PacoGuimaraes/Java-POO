@@ -1,0 +1,27 @@
+package praticando02;
+import java.util.Scanner;
+
+public class praticando02 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Insira o primeiro número: ");
+        float numero1 = scanner.nextInt();
+
+        System.out.print("Insira o segundo número: ");
+        float numero2 = scanner.nextInt();
+
+        float resultadoSoma = numero1 + numero2;
+        float resultadoSubtracao = numero1 - numero2;
+        float resultadoMultiplicacao = numero1 * numero2;
+        float resultadoDivisao = numero1 / numero2;
+
+        System.out.println("\nResultados das operações:");
+        System.out.println("Soma: " + resultadoSoma);
+        System.out.println("Subtração: " + resultadoSubtracao);
+        System.out.println("Multiplicação: " + resultadoMultiplicacao);
+        System.out.println("Divisão: " + resultadoDivisao);
+
+        scanner.close();
+    }
+}

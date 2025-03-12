@@ -1,0 +1,26 @@
+package praticando06;
+import java.util.Scanner;
+
+public class praticando06 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Informe a distância percorrida pelo veículo (em km): ");
+        double distanciaPercorrida = scanner.nextDouble();
+
+        System.out.print("Informe o tempo total da viagem (em horas): ");
+        double tempoGasto = scanner.nextDouble();
+
+        System.out.print("Informe a quantidade de combustível consumida (em litros): ");
+        double combustivelConsumido = scanner.nextDouble();
+
+        double velocidadeMedia = distanciaPercorrida / tempoGasto;
+        double consumoMedio = distanciaPercorrida / combustivelConsumido;
+
+        System.out.println("\nResultados da viagem:");
+        System.out.printf("Velocidade Média: %.2f km/h\n", velocidadeMedia);
+        System.out.printf("Consumo Médio de Combustível: %.2f km/l\n", consumoMedio);
+
+        scanner.close();
+    }
+}

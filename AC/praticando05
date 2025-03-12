@@ -1,0 +1,22 @@
+package praticando05;
+import java.util.Scanner;
+
+public class praticando05 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Informe um tempo em segundos: ");
+        int tempoTotal = scanner.nextInt();
+
+        int horas = tempoTotal / 3600;
+        int minutos = (tempoTotal % 3600) / 60;
+        int segundos = tempoTotal % 60;
+
+        System.out.println("\nConversão de tempo:");
+        System.out.println("Horas: " + horas);
+        System.out.println("Minutos: " + minutos);
+        System.out.println("Segundos: " + segundos);
+
+        scanner.close();
+    }
+}

@@ -1,0 +1,18 @@
+package praticando04;
+import java.util.Scanner;
+
+public class praticando04 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Informe o raio do círculo: ");
+        double raioCirculo = scanner.nextDouble();
+
+        double areaCirculo = Math.PI * Math.pow(raioCirculo, 2);
+
+        System.out.println("\nResultados:");
+        System.out.printf("Área do círculo: %.2f\n", areaCirculo);
+
+        scanner.close();
+    }
+}

@@ -1,0 +1,19 @@
+package praticando07;
+import java.util.Scanner;
+
+public class praticando07 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Informe um número inteiro: ");
+        int valor = scanner.nextInt();
+
+        if (valor % 2 == 0) {
+            System.out.println("O número " + valor + " é PAR.");
+        } else {
+            System.out.println("O número " + valor + " é ÍMPAR.");
+        }
+
+        scanner.close();
+    }
+}

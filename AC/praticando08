@@ -1,0 +1,26 @@
+package praticando08;
+import java.util.Scanner;
+
+public class praticando08 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Informe a quantidade de kilowatts consumidos na residência: ");
+        double consumoKw = scanner.nextDouble();
+
+        System.out.print("Informe o preço do kilowatt: ");
+        double precoKw = scanner.nextDouble();
+
+        double custoTotal = consumoKw * precoKw;
+
+        if (consumoKw < 150) {
+            double desconto = custoTotal * 0.10;
+            custoTotal -= desconto;
+            System.out.println("\nDesconto de 10% aplicado! Economia de R$ " + desconto);
+        }
+
+        System.out.printf("Total a pagar: R$ %.2f\n", custoTotal);
+
+        scanner.close();
+    }
+}

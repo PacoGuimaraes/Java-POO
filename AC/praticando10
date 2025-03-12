@@ -1,0 +1,27 @@
+package praticando10;
+import java.util.Scanner;
+
+public class praticando10 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Por favor, insira um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        System.out.print("Informe o limite inicial do intervalo: ");
+        int limiteInferior = scanner.nextInt();
+
+        System.out.print("Informe o limite final do intervalo: ");
+        int limiteSuperior = scanner.nextInt();
+
+        if (numero > limiteSuperior) {
+            System.out.print("O número está ACIMA do intervalo estabelecido!");
+        } else if (numero < limiteInferior) {
+            System.out.print("O número está ABAIXO do intervalo estabelecido!");
+        } else {
+            System.out.print("O número está CONTIDO dentro do intervalo!");
+        }
+        
+        scanner.close();
+    }
+}

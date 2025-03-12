@@ -1,0 +1,34 @@
+package praticando09;
+import java.util.Scanner;
+
+public class praticando09 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Informe um número real: ");
+        double numero = scanner.nextDouble();
+
+        int inteiro = (int) numero;
+        double decimal = numero - inteiro;
+
+        int arredondado;
+
+        if (numero < 0) {
+            if (decimal <= -0.5) {
+                arredondado = inteiro - 1;
+            } else {
+                arredondado = inteiro;
+            }
+        } else {
+            if (decimal >= 0.5) {
+                arredondado = inteiro + 1;
+            } else {
+                arredondado = inteiro;
+            }
+        }
+
+        System.out.println("Valor arredondado: " + arredondado);
+
+        scanner.close();
+    }
+}

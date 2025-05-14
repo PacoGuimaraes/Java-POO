@@ -1,6 +1,6 @@
 package PraticandoAC;
 import java.util.Scanner;
-
+ 
 public class Praticando11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

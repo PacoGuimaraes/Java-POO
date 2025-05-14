@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Praticando15 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+ 
         int qtdVogais = 0;
         int qtdDigitos = 0;
         int qtdOutros = 0;

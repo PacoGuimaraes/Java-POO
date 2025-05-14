@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Praticando14 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+ 
         int quantidadeAlunos = 0;
         double somaNotas = 0;
         double maiorNota = Double.MIN_VALUE;
